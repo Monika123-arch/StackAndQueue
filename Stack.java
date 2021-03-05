@@ -1,3 +1,4 @@
+
 import linkedlist.*;
 
 public class Stack<K> {
@@ -9,6 +10,14 @@ public class Stack<K> {
 	
 	public void push(Node<K> value) {
 		linkedlist.add(value);
+	}
+	
+	public Node<K> peek() {
+		return linkedlist.head;
+	}
+	
+	public Node<K> pop() {
+		return linkedlist.pop();
 	}
 	
 	public void printStack() {
